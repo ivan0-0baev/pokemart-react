@@ -1,0 +1,399 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/*
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/*
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/*
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+*/
+
+.body {
+  display: flex; 
+  
+}
+
+.productGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+  margin-bottom: 10vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 17vmax 17vmax 17vmax;
+  grid-gap: 1rem;
+  grid-auto-flow: row;
+  min-width: 10vw;
+  max-width: 50vw;
+  
+}
+
+#categoryName {
+  font-size: calc(5px + 2vmax);
+  text-align: center;
+  margin-bottom: 5vh;
+  border-bottom: solid;
+  border-color: #d9ebfd;
+  border-radius: 5%;
+  font-weight: bold;
+  font-style: "Anton";
+  padding: 1vmax;
+}
+#categoryDescription {
+  font-family: "Rajdhani";
+  font-weight: bold;
+}
+
+.card {
+  /*border: solid;*/
+  background: linear-gradient(190deg, white 30%, #d9ebfd 30%);
+  border: solid;
+  border-color: #d9ebfd;
+  border-radius: 10%;
+  font-size: calc(5px + 1vmax);
+  transition: 0.5;
+  position: relative;
+  height: 30vmax;
+}
+
+.card-body {
+  opacity: 0;
+  position: relative;
+  font-family: "Rajdhani";
+  font-weight: bold;
+  z-index: 1;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 40%;
+}
+
+.card:hover > img {
+  
+  justify-content: right;
+  transition: 0.5s;
+  z-index: 10;
+  width: 100%;
+  opacity: 0.15;
+}
+
+.card:hover > .card-body {
+
+  opacity: 1;
+  transition: 0.5s;
+  position: relative;
+  font-weight: 900;
+  font-size: calc(5px + 1vmax);
+}
+
+.card > img{
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.itemRating {
+  font-size: calc(8px + 1vmax);
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.buyButton {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: none;
+  border: none;
+  transition: 0.5s;
+  font-size: calc(10px + 1vmax);
+  opacity: 0.7;
+}
+
+.buyButton:hover {
+  font-size: calc(15px + 1vmax);
+  opacity: 1;
+}
+
+.loadMore {
+  margin-top: 10vh;
+  background: transparent;
+  border: none;
+  font-size: calc(10px + 2vmin);
+  font-family: "Anton";
+  transition: 0.5s;
+}
+
+.loadMore:hover {
+  font-size: calc(15px + 2vmin);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 10vh;
+  
+}
+
+.conditions {
+  width: 100%;
+  position: sticky;
+  top: 10vmin;
+  z-index: 999;
+}
+
+.orderConditions {
+  /*display: grid;
+  grid-template-columns: 17vmin 17vmin 17vmin 17vmin;*/
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(270deg, #A8B8C8 30%, #F0F0F8 30%);
+  font-size: calc(10px + 2vmin);
+  font-family: 'Anton';
+  padding: 3vmin;
+  column-gap: 3vmin;
+  row-gap: 1vh;
+}
+
+.select {
+  background: white;
+  border: none;
+  border-radius: 5%;
+  font-size: calc(5px + 2vmin);
+  transition: 0.5s;
+  padding: 0.5vw;
+}
+
+@media (max-width: 1080px) {
+  .card-body {
+    font-size: calc(1px + 2vmin);
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 810px){
+  .container {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+  }
+  .orderConditions {
+    height: 10vh;
+    grid-template-columns: 7rem 7rem;
+    grid-auto-flow: row;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-body {
+    font-size: calc(10px + 1vmin);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+}
+
+@media (hover: none){
+  .card-body{
+    opacity: 1;
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: calc(10px + 1vmin);
+  }
+  .card > img {
+    width: 30%;
+  }
+  .buyButton {
+    background-color: #f0f7fd;
+    font-size: calc(10px + 2vmin);
+    border-radius: 10%;
+  }
+  .loadMore {
+    background-color: #f0f7fd;
+  }
+  .orderConditions {
+    padding-top: 2vmax;
+  }
+}
+
+@media (max-width: 560px){
+  .container {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+  }
+  .orderConditions {
+    font-size: calc(10px + 1vmin);
+    gap: 0 0;
+    padding-bottom: 0;
+  }
+}
+
+
+#header {
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background: linear-gradient(to bottom,#70B8F0 55%, #4880C0 55%);
+
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmax);
+  color: #A82028;
+
+  position: sticky;
+  top: 0;
+  transition: 0.5s;
+  font-family: 'Anton';
+  z-index: 1000;
+  
+}
+
+#header > img {
+  width: 10vmin;
+}
+
+
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background: linear-gradient(270deg, #F0F0F8 30%, #A8B8C8 30%);
+  font-size: calc(10px + 2vmin);
+  font-family: 'Anton';
+  top: 18vh;
+
+}
+
+.label {
+  margin-top: 2vh;
+}
+
+.mmLabel {
+  font-size: calc(5px + 2vmin);
+  text-align: left;
+}
+
+.filterElement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  padding: 2vh;
+  position: sticky;
+  top: 18vh;
+  
+}
+
+
+.filterInput {
+  margin-top: 1vh;
+  height: 3vh;
+  background: white;
+  border: none;
+  font-size: calc(10px + 1vmin);
+  
+}
+
+.filterButton {
+  margin-top: 4vh;
+  background: white;
+  border: none;
+  border-radius: 5%;
+  font-size: calc(2px + 2vmin);
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 0.5vw;
+}
+
+.filterButton:hover {
+  background: #C8D8E8;
+  font-size: calc(3px + 2vmin);
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 750px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+.footer {
+  margin-top: auto;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Anton';
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background: linear-gradient(270deg,#C8D8E8 70%, #F0F0F8 70%);
+
+  text-align: left;
+  font-size: calc(10px + 1vmin);
+  color: #A82028;
+  
+}
+
+.footerContent {
+  margin-left: 5vmin;
+}

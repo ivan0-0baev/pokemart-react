@@ -1,0 +1,159 @@
+ {
+    "products" : [{
+        "pokeballs": [
+            {
+                "name": "Poke Ball",
+                "description": "A tool for catching wild Pokémon.",
+                "cost": "200",
+                "img": "/images/poke.png",
+                "rating": "6"
+            },
+            {
+                "name": "Great Ball",
+                "description": "A good, high-performance Poké Ball that provides a higher Pokémon catch rate than a standard Poké Ball can.",
+                "cost": "600",
+                "img": "/images/great.png",
+                "rating": "4"
+            },
+            {
+                "name": "Ultra Ball",
+                "description": "An ultra-high performance Poké Ball that provides a higher success rate for catching Pokémon than a Great Ball.",
+                "cost": "1200",
+                "img": "/images/ultra.png",
+                "rating": "5"
+            }
+        ]},
+        {"potions":	[
+            {
+                "name": "Potion",
+                "description": "Restores the HP of a Pokémon by 20 points.",
+                "cost": "300",
+                "img": "/images/potion.png",
+                "rating": "3"
+            },
+            {
+                "name": "Super Potion",
+                "description": "Restores the HP of a Pokémon by 50 points.",
+                "cost": "700",
+                "img": "/images/super-potion.png",
+                "rating": "6"
+            },
+            {
+                "name": "Hyper Potion",
+                "description": "Restores the HP of a Pokémon by 200 points.",
+                "cost": "1200",
+                "img": "/images/hyper-potion.png",
+                "rating": "3"
+            },
+            {
+                "name": "Max Potion",
+                "description": "Fully restores the HP of a Pokémon.",
+                "cost": "2500",
+                "img": "/images/max-potion.png",
+                "rating": "4"
+            }
+        ]},
+        {"heals":	[
+            {
+                "name": "Full Heal",
+                "description": "Heals all the status problems of one Pokémon.",
+                "cost": "600",
+                "img": "/images/full-heal.png",
+                "rating": "5"
+            },
+            {
+                "name": "Antidode",
+                "description": "Heals a poisoned Pokémon.",
+                "cost": "100",
+                "img": "/images/antidote.png",
+                "rating": "3"
+            },
+            {
+                "name": "Paralyze Heal",
+                "description": "Heals a paralyzed Pokémon.",
+                "cost": "200",
+                "img": "/images/paralyze-heal.png",
+                "rating": "3"
+            },
+            {
+                "name": "Burn Heal",
+                "description": "Heals Pokémon of a burn.",
+                "cost": "250",
+                "img": "/images/burn-heal.png",
+                "rating": "3"
+            },
+            {
+                "name": "Ice Heal",
+                "description": "Defrosts a frozen Pokémon.",
+                "cost": "250",
+                "img": "/images/ice-heal.png",
+                "rating": "1"
+            },
+            {
+                "name": "Awakening",
+                "description": "Awakens a sleeping Pokémon.",
+                "cost": "250",
+                "img": "/images/awakening.png",
+                "rating": "4"
+            }
+        ]},
+        {"TMs":	[
+            {
+                "name": "TM38 Fire Blast",
+                "description": "Incinerates everything it strikes. May cause a burn.",
+                "cost": "5500",
+                "img": "/images/fire.png",
+                "rating": "5"
+            },
+            {
+                "name": "TM25 Thunder",
+                "description": "Strikes the foe with thunderbolt. It may paralyze.",
+                "cost": "5500",
+                "img": "/images/electric.png",
+                "rating": "5"
+            },
+            {
+                "name": "TM14 Blizzard",
+                "description": "A brutal snow-and-wind attack that may freeze the foe.",
+                "cost": "5500",
+                "img": "/images/ice.png",
+                "rating": "5"
+            },
+            {
+                "name": "TM15 Hyper Beam",
+                "description": "Powerful, but leaves the user immobile the next turn.",
+                "cost": "7500",
+                "img": "/images/normal.png",
+                "rating": "6"
+            },
+            {
+                "name": "TM17 Protect",
+                "description": "Evades attack, but may fail if used in succession.",
+                "cost": "3000",
+                "img": "/images/normal.png",
+                "rating": "5"
+            },
+            {
+                "name": "TM20 Safeguard",
+                "description": "A mystical force prevents all status problems.",
+                "cost": "3000",
+                "img": "/images/normal.png",
+                "rating": "2"
+            },
+            {
+                "name": "TM33 Reflect",
+                "description": "Creates a wall of light that weakens physical attacks.",
+                "cost": "3000",
+                "img": "/images/psychic.png",
+                "rating": "4"
+            },
+            {
+                "name": "TM16 Light Screen",
+                "description": "Creates a wall of light that lowers Sp. Atk damage.",
+                "cost": "3000",
+                "img": "/images/psychic.png",
+                "rating": "4"
+            }
+        ]}
+    ]
+}

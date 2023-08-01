@@ -1,0 +1,39 @@
+.alert {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    font-style: "Anton";
+    font-size: x-large;
+    /*transform: translate(-50%, -50%);*/
+  }
+  
+  .success {
+    background-color: #91D890; /* Green color for success */
+    animation: popOut 2s ease;
+  }
+  
+  @keyframes popOut {
+    0% {
+        transform: translateY(100%);
+
+    }
+    75% {
+        transform: translateY(0%);
+
+    }
+    100% {
+        transform: translateY(100%);
+
+    }
+  }
